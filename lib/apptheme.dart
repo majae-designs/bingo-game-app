@@ -8,7 +8,7 @@ class AppTheme {
   static const primaryColor = Color.fromARGB(255, 66, 110, 57);
   static const primaryDarkColor = Color.fromARGB(255, 48, 83, 41);
   static const secondaryColor = Color.fromARGB(255, 37, 32, 32);
-  static const darkTextColor = Color.fromARGB(255, 150, 137, 137);
+  static const darkTextColor = Color.fromARGB(255, 32, 31, 31);
   static const lightTextColor = Color.fromARGB(255, 229, 226, 226);
   static const dangerColor = Color.fromARGB(255, 196, 15, 51);
   static const backgroundColor1 = Color.fromARGB(255, 25, 28, 29);
@@ -18,7 +18,7 @@ class AppTheme {
     letterSpacing: 0.0,
     fontWeight: FontWeight.bold,
     fontStyle: FontStyle.normal,
-    fontSize: 25,
+    fontSize: 30,
   );
 
   static var subHeading = mainFont(
@@ -53,7 +53,7 @@ class AppTheme {
     borderSide: BorderSide(
       width: 1,
     ),
-    borderRadius: BorderRadius.circular(8),
+    borderRadius: BorderRadius.circular(1),
   );
 
   static var inputEnabledBorder = inputBorderStyle.copyWith(
@@ -88,5 +88,16 @@ class AppTheme {
     backgroundColor: Colors.transparent,
     alignment: Alignment.center,
     textStyle: specialFont(color: Colors.white, fontStyle: FontStyle.normal),
+  );
+
+  static var menuButton = TextButton.styleFrom(
+    foregroundColor: darkTextColor,
+    backgroundColor: transparentColor,
+    padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 0),
+    textStyle: specialFont(color: darkTextColor, fontWeight: FontWeight.bold),
+    side: BorderSide(color: darkTextColor, width: 4),
+    shape: RoundedRectangleBorder(
+      borderRadius: BorderRadius.circular(-50),
+    ),
   );
 }
